@@ -86,6 +86,44 @@ main{
     color: #FF900f;
     font-weight: 700px;
 }
+/* feature section styles */
+.features{
+    margin: 130px;
+    display: flex;
+    gap: 100px;
+}
+.features .section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+}
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-year-badge{
+    border-radius: 8px;
+    background: #ff900e;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    margin-top: 0;
+}
+.ten-year-badge p{
+    font-size:1.5rem;
+}
+.feature-img img{
+    height: 80%;
+    margin-left: 50px;
+}
 /* facts section */
 .facts-card-conteinar{
     display: flex;
@@ -108,6 +146,20 @@ main{
     font-size: 1.25rem;
     margin-top: 5px;
 }
+ /* sponsors style */
+ .sponsors{
+    text-align: center;
+  }
+  .sponsors-img-containar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center;
+  }
+  .sponsors-img-containar img{
+    width: 165px;
+  }
 
 /* responsive midea quary */
 /* mobile devices */
@@ -116,23 +168,40 @@ main{
         padding: 20px;
     }
     nav ,
-    .teams-container{
+    .teams-container,
+    .features,
+    .facts-card-conteinar,
+    .sponsors-img-containar{
         flex-direction: column;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-year-badge{
+        position: static;
+        max-width: 300px;
+    }
+    .facts-card-conteinar{
+        gap: 20px;
     }
     .team-img-containar{
         grid-template-columns: 1fr;
     }
-    .teams-content{
+    .teams-content,
+    .facts-card-conteina{
         padding-left: 20px;
         padding-right: 20px;
     }
-}
+   
 /* teblat or mideum devices */
 @media screen (min-width:576px) (max-width:960px) {
     header{
         padding:20px;
     }
     nav,
-    .teams-container{
+    .teams-container,
+    .sponsors-img-containar,
+    .features{
         flex-direction: column;
     }
